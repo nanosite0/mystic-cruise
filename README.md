@@ -1,2 +1,3 @@
 # mystic-cruise
-Mystic Cruise by Waterworks. GEM 100 Final.
+Mystic Cruise by Waterworks, (Leonardo, De'Anquan, Luke).
+GEM100 Final
