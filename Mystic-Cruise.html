@@ -11,8 +11,31 @@
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play Mystic-Cruise.</tw-noscript></noscript></tw-story>
 <tw-storydata name="Mystic-Cruise" startnode="1" creator="Twine" creator-version="2.10.0" format="Harlowe" format-version="3.3.9" ifid="3A56B73F-F154-4EB9-B8E4-23107481259F" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
 
-body[data-tags~="museum"] {
-	background-image: url("C:\Users\outla\Documents\Twine\Stories\MysticCruise\app\images\Museum.jpg");
+tw-story[tags~="menu"] {
+	background-color: brown;
+}
+
+tw-story[tags~="museum"] {
+	background-image: url("https://raw.githubusercontent.com/nanosite0/mystic-cruise/refs/heads/main/app/images/museum.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+  	
+}
+
+tw-story[tags~="village"] {
+	background-image: url("https://raw.githubusercontent.com/nanosite0/mystic-cruise/refs/heads/main/app/images/village.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+tw-story[tags~="river"] {
+	background-image: url("https://raw.githubusercontent.com/nanosite0/mystic-cruise/refs/heads/main/app/images/riverbank.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+tw-story[tags~="riverSuccess"] {
+	background-image: url("https://raw.githubusercontent.com/nanosite0/mystic-cruise/refs/heads/main/app/images/riverbankCanoe.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -23,29 +46,27 @@ tw-passage {
 }
 
 tw-link {
-color: #45A165;
+color: #98008E;
 }
 
 tw-link:hover {
-color: #6F72BA;
+color: #9A015F;
 text-decoration: none;
-border-bottom: 4px solid #6F8FAF;
-}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="museum" color="blue"></tw-tag><tw-passagedata pid="1" name="Start" tags="" position="575,225" size="200,200">(enchant:?page,(bg:&quot;https://jooinn.com/images/wooden-planks-4.jpg&quot;))
-
-(text-style:&quot;bold&quot;,&quot;italic&quot;,&quot;emboss&quot;,&quot;expand&quot;,&quot;buoy&quot;)[Mystic Cruise]
-
+border-bottom: 4px solid #9A015F;
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="museum" color="blue"></tw-tag><tw-tag name="village" color="orange"></tw-tag><tw-tag name="river" color="blue"></tw-tag><tw-tag name="menu" color="red"></tw-tag><tw-tag name="riverSuccess" color="purple"></tw-tag><tw-passagedata pid="1" name="Start" tags="menu" position="575,225" size="200,200">(text-style:&quot;bold&quot;,&quot;italic&quot;,&quot;emboss&quot;,&quot;expand&quot;,&quot;buoy&quot;)[Mystic Cruise]
+by Waterworks
 &lt;/style&gt;
-&lt;img src=&quot;C:\Users\outla\Documents\Twine\Stories\MysticCruise\app\images\splashArt.png&quot;&gt;
+&lt;img src=&quot;https://raw.githubusercontent.com/nanosite0/mystic-cruise/refs/heads/main/app/images/splashArt.png&quot;&gt;
 &lt;/div&gt;
 
 (text-style:&quot;expand&quot;,&quot;sway&quot;)+(text-colour:#dee2e6)+(hover-style:(text-style:&quot;emboss&quot;,&quot;buoy&quot;))[[Start Game]]
-(text-style:&quot;expand&quot;,&quot;sway&quot;)+(text-colour:#dee2e6)+(hover-style:(text-style:&quot;emboss&quot;,&quot;buoy&quot;))[[Options]]</tw-passagedata><tw-passagedata pid="2" name="Start Game" tags="museum" position="625,450" size="100,100">	Emma pressed her hand against the cold surface of the Chicago Maritime Museum’s east entrance.
+(text-style:&quot;expand&quot;,&quot;sway&quot;)+(text-colour:#dee2e6)+(hover-style:(text-style:&quot;emboss&quot;,&quot;buoy&quot;))[[Credits]]</tw-passagedata><tw-passagedata pid="2" name="Start Game" tags="museum" position="625,450" size="100,100">	(enchant:?passage,(bg:(hsl:270,0.2025,0.6902,0.9)))Emma pressed her hand against the cold surface of the Chicago Maritime Museum’s east entrance.
     
     It should have been locked like any other museum past midnight, (text-style:&quot;italic&quot;,&quot;expand&quot;)[but it wasn’t].
     
     Even more confusing, her grandfather’s directions got her right into the museum without any trouble. Emma&#39;s sneakers squeaked against the floors as she drowsily navigated the darkness past the artifact exhibits. 
 
-[[Walk Left]] or [[Walk Right]]?</tw-passagedata><tw-passagedata pid="3" name="Options" tags="" position="750,450" size="100,100"></tw-passagedata><tw-passagedata pid="4" name="Walk Left" tags="museum" position="575,600" size="100,100">Emma&#39;s grandfather had spoken to her the day before when she told him about her field trip, 
+[[Walk Left]] or [[Walk Right]]?</tw-passagedata><tw-passagedata pid="3" name="Walk Left" tags="museum" position="575,600" size="100,100">(enchant:?passage,(bg:(hsl:270,0.2025,0.6902,0.9)))Emma&#39;s grandfather had spoken to her the day before when she told him about her field trip, 
 
 “Didn’t your mother tell you? Our family’s canoe is on display in that museum.”
 
@@ -59,7 +80,7 @@ Once she got to where she thought she should be she looked around, admiring the 
 One caught her eye; moonlight beaming through a window like a spotlight shining on the birchbark. 
 
 [[Inspect the Canoe]]
-[[Sit in the Canoe]]</tw-passagedata><tw-passagedata pid="5" name="Walk Right" tags="museum" position="675,600" size="100,100">Emma&#39;s grandfather had spoken to her the day before when she told him about her field trip, 
+[[Sit in the Canoe]]</tw-passagedata><tw-passagedata pid="4" name="Walk Right" tags="museum" position="675,600" size="100,100">(enchant:?passage,(bg:(hsl:270,0.2025,0.6902,0.9)))Emma&#39;s grandfather had spoken to her the day before when she told him about her field trip, 
 
 “Didn’t your mother tell you? Our family’s canoe is on display in that museum.”
 
@@ -73,17 +94,13 @@ Once she got to where she thought she should be she looked around, admiring the 
 One caught her eye; moonlight beaming through a window like a spotlight shining on the birchbark. 
 
 [[Inspect the Canoe]]
-[[Sit in the Canoe]]</tw-passagedata><tw-passagedata pid="6" name="Inspect the Canoe" tags="museum" position="575,775" size="100,100">Emma stepped closer, running her hands along the side, feeling the smoothness of the wood.
-[[Sit in the Canoe]] </tw-passagedata><tw-passagedata pid="7" name="Sit in the Canoe" tags="museum" position="700,850" size="100,100">Emma strangely felt an overwhelming urge to take a seat in the canoe, so she climbed up and sat down.
+[[Sit in the Canoe]]</tw-passagedata><tw-passagedata pid="5" name="Inspect the Canoe" tags="museum" position="575,775" size="100,100">(enchant:?passage,(bg:(hsl:270,0.2025,0.6902,0.9)))Emma stepped closer, running her hands along the side, feeling the smoothness of the wood.
+[[Sit in the Canoe]] </tw-passagedata><tw-passagedata pid="6" name="Sit in the Canoe" tags="museum" position="700,850" size="100,100">(enchant:?passage,(bg:(hsl:270,0.2025,0.6902,0.9)))Emma strangely felt an overwhelming urge to take a seat in the canoe, so she climbed up and sat down.
 
 Meaning only to sit in the canoe for a minute, the late night had caught up to her.
 She felt her eyelids getting heavy, and as she drooped down into the bottom of the canoe, she fell asleep...
-[[continue]]</tw-passagedata><tw-passagedata pid="8" name="continue" tags="" position="625,1000" size="100,100">A breeze blows over Emma as she lays in the canoe, an empty dark sky passing above her.
 
-She sat up quickly, the canoe shifting slightly as her weight presses it into the riverbank mud.
-Confused, she steps out of the canoe.
-[[Look Left]]
-[[Look Right]]</tw-passagedata><tw-passagedata pid="9" name="Look Left" tags="" position="575,1225" size="100,100">Emma looks up the riverbank, noticing a long billow of smoke behind the tall reeds. 
+[[Wake Up.]]</tw-passagedata><tw-passagedata pid="7" name="Look Left" tags="village" position="575,1225" size="100,100">(enchant:?passage,(bg:(hsl:27,0.4643,0.6706,0.9)))Emma looks up the riverbank, noticing a long billow of smoke behind the tall reeds. 
 
 A set of reeds nearby rustles, and an older woman steps into view from further up the river.
 She had long black hair with streaks of gray, a hand woven birchbark basket tucked under her arm. The bottom of her deerskin dress was dark, soaked with water from walking along the water.
@@ -96,8 +113,8 @@ She walked with her, leaving the canoe by the water.
 
 [[“Who are you?”]]
 [[“What’s in that basket?”]]
-[[“How did I get here?”]]</tw-passagedata><tw-passagedata pid="10" name="Look Right" tags="" position="687.5,1125" size="100,100">Looking down the riverbank, Emma sees a white forest with vibrant leaves.
-[[Look Left]] </tw-passagedata><tw-passagedata pid="11" name="“Who are you?”" tags="" position="425,1425" size="100,100">The old woman smiles,
+[[“How did I get here?”]]</tw-passagedata><tw-passagedata pid="8" name="Look Right" tags="village" position="700,1125" size="100,100">(enchant:?passage,(bg:(hsl:27,0.4643,0.6706,0.9)))Looking down the riverbank, Emma sees a white forest with vibrant leaves.
+[[Look Left]] </tw-passagedata><tw-passagedata pid="9" name="“Who are you?”" tags="village" position="425,1425" size="100,100">(enchant:?passage,(bg:(hsl:27,0.4643,0.6706,0.9)))The old woman smiles,
 “You can just call me grandmother.”
 
 (set: $_seenQ1 to &quot;true&quot;)
@@ -105,19 +122,20 @@ She walked with her, leaving the canoe by the water.
 (if:$_seenQ2 is not &quot;true&quot;)[[“What’s in that basket?”]]
 (if:$_seenQ3 is not &quot;true&quot;)[[“How did I get here?”]]
 
-(if:$_seenQ3 is &quot;true&quot;)[[Move Forward]]</tw-passagedata><tw-passagedata pid="12" name="“What’s in that basket?”" tags="" position="575,1475" size="100,100">“Oh it’s nothing, just materials I use for crafting things in the village.”
+(if:$_seenQ3 is &quot;true&quot;)[[Move Forward]]</tw-passagedata><tw-passagedata pid="10" name="“What’s in that basket?”" tags="village" position="575,1475" size="100,100">(enchant:?passage,(bg:(hsl:27,0.4643,0.6706,0.9)))“Oh it’s nothing, just materials I use for crafting things in the village.”
 
 (set: $_seenQ2 to &quot;true&quot;)
 
 (if:$_seenQ1 is not &quot;true&quot;)[[“Who are you?”]]
-(if:$_seenQ3 is not &quot;true&quot;)[[“How did I get here?”]]</tw-passagedata><tw-passagedata pid="13" name="“How did I get here?”" tags="" position="725,1425" size="100,100">“You followed the canoe of your ancestor’s memory. The river brought you where you needed to be.”
+(if:$_seenQ3 is not &quot;true&quot;)[[“How did I get here?”]]
+(if:$_seenQ1 is &quot;true&quot; and $_seenQ3 is &quot;true&quot;)[[Move Forward]]</tw-passagedata><tw-passagedata pid="11" name="“How did I get here?”" tags="village" position="725,1425" size="100,100">(enchant:?passage,(bg:(hsl:27,0.4643,0.6706,0.9)))“You followed the canoe of your ancestor’s memory. The river brought you where you needed to be.”
 
 (set: $_seenQ3 to &quot;true&quot;)
 
 (if:$_seenQ1 is not &quot;true&quot;)[[“Who are you?”]]
 (if:$_seenQ2 is not &quot;true&quot;)[[“What’s in that basket?”]]
 
-(if:$_seenQ1 is &quot;true&quot;)[[Move Forward]]</tw-passagedata><tw-passagedata pid="14" name="Move Forward" tags="" position="575,1650" size="100,100">Soon they reached the village, smoke emanating from the piles of firewood in the center of the ring of teepees.
+(if:$_seenQ1 is &quot;true&quot;)[[Move Forward]]</tw-passagedata><tw-passagedata pid="12" name="Move Forward" tags="village" position="575,1650" size="100,100">(enchant:?passage,(bg:(hsl:27,0.4643,0.6706,0.9)))Soon they reached the village, smoke emanating from the piles of firewood in the center of the ring of teepees.
 
 Grandmother gestures toward a collection of white trees and sits down on a stump nearby.
 She rested the basket at her feet, running her palm along one of the trunks of the trees.
@@ -128,13 +146,13 @@ It peels off in wide, thin sheets as light as paper, yet is strong enough to ben
 We use it for many items. Look at my basket, (text-style:&quot;underline&quot;)[it’s made of the same bark of these trees].
 With the gift of these trees we are able to hold food, cover our homes from the weather, and travel along the water.”
 
-[[Next]]</tw-passagedata><tw-passagedata pid="15" name="Next" tags="" position="575,1775" size="100,100">She got back up, bringing Emma to a young girl, not too distant in age from her.
+[[Next]]</tw-passagedata><tw-passagedata pid="13" name="Next" tags="village" position="575,1775" size="100,100">(enchant:?passage,(bg:(hsl:27,0.4643,0.6706,0.9)))She got back up, bringing Emma to a young girl, not too distant in age from her.
 
 The young girl had a small carved bowl beside her, inside was a length of what looked like rope and a needle. She held a white knife in one hand and stood close to a birch tree. Emma approached her and tapped on her shoulder.
 
 [[“What are you doing?”]]
 [[Point to the bowl. “What is this stuff?”]]
-</tw-passagedata><tw-passagedata pid="16" name="“What are you doing?”" tags="" position="475,1925" size="100,100">The girl looks over,
+</tw-passagedata><tw-passagedata pid="14" name="“What are you doing?”" tags="village" position="475,1925" size="100,100">(enchant:?passage,(bg:(hsl:27,0.4643,0.6706,0.9)))The girl looks over,
 “I’m stripping birch bark off of this tree to make a canoe.”
 
 (set: $_seenQ4 to &quot;true&quot;)
@@ -143,24 +161,24 @@ The young girl had a small carved bowl beside her, inside was a length of what l
 
 (if:$_seenQ5 is &quot;true&quot;)[“Here, you try.” The young girl says, while pointing to a spot on the tree.
 
-[[Take the knife]]]</tw-passagedata><tw-passagedata pid="17" name="Take the knife" tags="" position="575,2075" size="100,100">[[The bone knife is added to inventory.]]
+[[Take the knife]]]</tw-passagedata><tw-passagedata pid="15" name="Take the knife" tags="village" position="575,2075" size="100,100">(enchant:?passage,(bg:(hsl:27,0.4643,0.6706,0.9)))[[The bone knife is added to inventory.]]
 
-(set: $boneKnife to &quot;acq&quot;)</tw-passagedata><tw-passagedata pid="18" name="The bone knife is added to inventory." tags="" position="575,2225" size="100,100">Emma slid the blade into the tree, trying to pry up the surface.
+(set: $boneKnife to &quot;acq&quot;)</tw-passagedata><tw-passagedata pid="16" name="The bone knife is added to inventory." tags="village" position="575,2225" size="100,100">(enchant:?passage,(bg:(hsl:27,0.4643,0.6706,0.9)))Emma slid the blade into the tree, trying to pry up the surface.
 The bark crackled slightly, peeling off in a large sheet about a quarter of the size of a canoe.
 
 The girl traced her finger along the sheet that Emma held,
 “This white side stays &#39;&#39;on the inside&#39;&#39; of the canoe, the underside of the bark &#39;&#39;stays on the outside&#39;&#39;.”
 
-[[Continue...]]</tw-passagedata><tw-passagedata pid="19" name="Continue..." tags="" position="575,2350" size="100,100">She tapped the carved bowl with her foot,
+[[Continue...]]</tw-passagedata><tw-passagedata pid="17" name="Continue..." tags="village" position="575,2350" size="100,100">(enchant:?passage,(bg:(hsl:27,0.4643,0.6706,0.9)))She tapped the carved bowl with her foot,
 
 “Now this is a 2 yard length of spruce root and a bone needle. They are used for sewing the bark together for the things we make. They’re bound together with a &#39;&#39;simple over-under stitch&#39;&#39;. This is only a //third// of the amount enough to make a canoe.”
 
 Are you ready to practice making a canoe?
 
 [[I&#39;m ready!]]
-[[Could you re-explain?]]</tw-passagedata><tw-passagedata pid="20" name="Take the bowl." tags="" position="575,3725" size="100,100">[[Sewing materials are added to inventory.]]
+[[Could you re-explain?]]</tw-passagedata><tw-passagedata pid="18" name="Take the bowl." tags="village" position="575,3725" size="100,100">(enchant:?passage,(bg:(hsl:27,0.4643,0.6706,0.9)))[[Sewing materials are added to inventory.]]
 
-(set: $sewMat to &quot;acq&quot;)</tw-passagedata><tw-passagedata pid="21" name="Sewing materials are added to inventory." tags="" position="575,3850" size="100,100">After the young girl leaves, a man runs by. He yells,
+(set: $sewMat to &quot;acq&quot;)</tw-passagedata><tw-passagedata pid="19" name="Sewing materials are added to inventory." tags="village" position="575,3850" size="100,100">(enchant:?passage,(bg:(hsl:27,0.4643,0.6706,0.9)))After the young girl leaves, a man runs by. He yells,
 
 “A heavy storm is approaching! Get ready to travel!”
 
@@ -168,7 +186,7 @@ This unsettled Emma, so she decided to make her way back closer to the riverside
 She trotted her way back through the mud between the reeds, but was startled to find that the canoe she was found in was gone. Panicking, she thought about what to do.
 
 [[Search for Your Canoe]]
-[[Travel back to the village]]</tw-passagedata><tw-passagedata pid="22" name="Point to the bowl. “What is this stuff?”" tags="" position="675,1925" size="100,100">“These are spruce roots and a bone needle.”
+[[Travel back to the village]]</tw-passagedata><tw-passagedata pid="20" name="Point to the bowl. “What is this stuff?”" tags="village" position="675,1925" size="100,100">(enchant:?passage,(bg:(hsl:27,0.4643,0.6706,0.9)))“These are spruce roots and a bone needle.”
 
 (set: $_seenQ5 to &quot;true&quot;)
 
@@ -176,31 +194,28 @@ She trotted her way back through the mud between the reeds, but was startled to 
 
 (if:$_seenQ4 is &quot;true&quot;)[“Here, you try.” The young girl says, while pointing to a spot on the tree.
 
-[[Take the knife]]]</tw-passagedata><tw-passagedata pid="23" name="Search for Your Canoe" tags="" position="525,3975" size="100,100">Emma walks along the river, trying to find if the canoe was still around. Finding shards of bark, she finds that the canoe she arrived in had broken down and flowed down the river in pieces due to its age.
-
-(set: $seenCanoeDMG to &quot;true&quot;)
-[[Travel back to the village]]</tw-passagedata><tw-passagedata pid="24" name="Travel back to the village" tags="" position="650,4050" size="100,100">Emma goes back to the village, meeting a man waiting next to a set of canoes. He seems to be covering sections of the inside of the canoe with a brown substance. He notices her but simply says,
+[[Take the knife]]]</tw-passagedata><tw-passagedata pid="21" name="Travel back to the village" tags="village" position="650,4050" size="100,100">(enchant:?passage,(bg:(hsl:27,0.4643,0.6706,0.9)))Emma goes back to the village, meeting a man waiting next to a set of canoes. He seems to be covering sections of the inside of the canoe with a brown substance. He notices her but simply says,
 “You’ll need to come with me. There’s something that that old woman wanted me to teach you.”
 He walked with urgency toward a different set of trees than she had visited before.
 
 [[What&#39;s going on?]]
-[[Why are we walking so quickly?]]</tw-passagedata><tw-passagedata pid="25" name="What&#39;s going on?" tags="" position="550,4175" size="100,100">“I was told to teach you about spruce resin.”
+[[Why are we walking so quickly?]]</tw-passagedata><tw-passagedata pid="22" name="What&#39;s going on?" tags="village" position="550,4175" size="100,100">(enchant:?passage,(bg:(hsl:27,0.4643,0.6706,0.9)))“I was told to teach you about spruce resin.”
 
 [[Why are we walking so quickly?]]
-[[Follow]]</tw-passagedata><tw-passagedata pid="26" name="Why are we walking so quickly?" tags="" position="725,4175" size="100,100">“A great storm approaches, we need to prepare. More importantly, I need to prepare you.”
+[[Follow]]</tw-passagedata><tw-passagedata pid="23" name="Why are we walking so quickly?" tags="village" position="725,4175" size="100,100">(enchant:?passage,(bg:(hsl:27,0.4643,0.6706,0.9)))“A great storm approaches, we need to prepare. More importantly, I need to prepare you.”
 
 [[What&#39;s going on?]]
-[[Follow]]</tw-passagedata><tw-passagedata pid="27" name="Follow" tags="" position="650,4325" size="100,100">The trees were dark green with light yellow-green needles. There were bowls fastened to the sides of the trees with the same brown substance the man was using flowing into them.
+[[Follow]]</tw-passagedata><tw-passagedata pid="24" name="Follow" tags="village" position="650,4325" size="100,100">(enchant:?passage,(bg:(hsl:27,0.4643,0.6706,0.9)))The trees were dark green with light yellow-green needles. There were bowls fastened to the sides of the trees with the same brown substance the man was using flowing into them.
 
 “This resin is used to seal the canoes to make them waterproof. You’ll need to seal the sections where the stitches are, where you think the water will be.”
 
-The sky darkened and light rain started to fall. [[You’ll likely only need to collect 1 bowl for a canoe.]]</tw-passagedata><tw-passagedata pid="28" name="You’ll likely only need to collect 1 bowl for a canoe." tags="" position="650,4450" size="100,100">“I need to go and prepare the rest of the village to leave. I’ve taught you the basics of it, good luck.”
+The sky darkened and light rain started to fall. [[You’ll likely only need to collect 1 bowl for a canoe.]]</tw-passagedata><tw-passagedata pid="25" name="You’ll likely only need to collect 1 bowl for a canoe." tags="village" position="650,4450" size="100,100">(enchant:?passage,(bg:(hsl:27,0.4643,0.6706,0.9)))“I need to go and prepare the rest of the village to leave. I’ve taught you the basics of it, good luck.”
 
 Rain begins to fall harder on Emma. She needs to figure out what to do.
 
 (if:$seenCanoeDMG is not &quot;true&quot;)[[Run down the river and search for the canoe.]]
 [[Try to build a canoe herself.]]
-[[Ask the man what to do.]]</tw-passagedata><tw-passagedata pid="29" name="Try to build a canoe herself." tags="" position="650,4650" size="100,100">Emma remembers that she&#39;ll need yards of bark, spruce roots, and resin to build a canoe.
+[[Ask the man what to do.]]</tw-passagedata><tw-passagedata pid="26" name="Try to build a canoe herself." tags="river" position="650,4650" size="100,100">(enchant:?passage,(bg:(hsl:210,0.8039,0.5,0.9)))Emma remembers that she&#39;ll need yards of bark, spruce roots, and resin to build a canoe.
 
 You have $bark yards of bark, $root spruce roots, and $resin spruce resin.
 
@@ -209,9 +224,13 @@ You have $bark yards of bark, $root spruce roots, and $resin spruce resin.
 (if: $searched &lt;= 5)[
 [[Find spruce roots.]]]
 (if: $collected is not 1)[
-[[Collect spruce resin.]]
-]
-[[Try putting together a canoe.]]</tw-passagedata><tw-passagedata pid="30" name="Ask the man what to do." tags="" position="775,4525" size="100,100">The man tells her,
+[[Collect spruce resin.]]]
+(if: $bark &gt; 0)[
+[[Discard bark]]]
+(if: $root &gt; 0)[
+[[Discard root]]]
+
+[[Try putting together a canoe.]]</tw-passagedata><tw-passagedata pid="27" name="Ask the man what to do." tags="village" position="775,4525" size="100,100">(enchant:?passage,(bg:(hsl:27,0.4643,0.6706,0.9)))The man tells her,
 
 “We don’t have enough canoes for everyone. I’m sorry but I have to leave.”
 
@@ -219,11 +238,11 @@ Emma decides she’ll have to make a canoe herself to escape the storm.
 
 (set: $askedOldMan to &quot;true&quot;)
 (if:$seenCanoeDMG is not &quot;true&quot;)[[Run down the river and search for the canoe.]]
-[[Try to build a canoe herself.]]</tw-passagedata><tw-passagedata pid="31" name="Run down the river and search for the canoe." tags="" position="525,4525" size="100,100">Emma runs down the river to find the canoe, finding shards of bark. The canoe she arrived in had broken down and flowed down the river in pieces due to its age.
+[[Try to build a canoe herself.]]</tw-passagedata><tw-passagedata pid="28" name="Run down the river and search for the canoe." tags="river" position="525,4525" size="100,100">(enchant:?passage,(bg:(hsl:27,0.4643,0.6706,0.9)))Emma runs down the river to find the canoe, finding shards of bark. The canoe she arrived in had broken down and flowed down the river in pieces due to its age.
 
 (set: $seenCanoeDMG to &quot;true&quot;)
 (if:$askedOldMan is not &quot;true&quot;)[[Ask the man what to do.]]
-[[Try to build a canoe herself.]]</tw-passagedata><tw-passagedata pid="32" name="Strip bark off of a tree." tags="" position="375,4700" size="100,100">You stripped a yard of bark from a tree.
+[[Try to build a canoe herself.]]</tw-passagedata><tw-passagedata pid="29" name="Strip bark off of a tree." tags="river" position="375,4700" size="100,100">(enchant:?passage,(bg:(hsl:210,0.8039,0.5,0.9)))You stripped a yard of bark from a tree.
 
 (set: $bark to it + 1)(set: $stripped to it + 1)
 You have $bark yards of bark.
@@ -235,7 +254,7 @@ You have completely stripped the tree. Look at it! It lost its dignity!]
 (if: $bark &gt; 0)[
 [[Discard bark]]
 ]
-(t8n-arrive:&quot;fade-down&quot;)[[Go back-&gt;Try to build a canoe herself.]]</tw-passagedata><tw-passagedata pid="33" name="Find spruce roots." tags="" position="650,4825" size="100,100">You searched around and found a spruce root
+(t8n-arrive:&quot;fade-down&quot;)[[Go back-&gt;Try to build a canoe herself.]]</tw-passagedata><tw-passagedata pid="30" name="Find spruce roots." tags="river" position="650,4825" size="100,100">(enchant:?passage,(bg:(hsl:210,0.8039,0.5,0.9)))You searched around and found a spruce root
 
 (set: $root to it + 1)(set: $searched to it + 1)
 You have $root spruce roots.
@@ -247,11 +266,11 @@ You search every nook and cranny, but no more spruce roots seem to come up!]
 (if: $root &gt; 0)[
 [[Discard root]]
 ]
-(t8n-arrive:&quot;fade-down&quot;)[[Go back-&gt;Try to build a canoe herself.]]</tw-passagedata><tw-passagedata pid="34" name="Collect spruce resin." tags="" position="925,4675" size="100,100">You collected some spruce resin into your bowl.
+(t8n-arrive:&quot;fade-down&quot;)[[Go back-&gt;Try to build a canoe herself.]]</tw-passagedata><tw-passagedata pid="31" name="Collect spruce resin." tags="river" position="925,4675" size="100,100">(enchant:?passage,(bg:(hsl:210,0.8039,0.5,0.9)))You collected some spruce resin into your bowl.
 
 (set: $resin to it + 1)(set: $collected to it + 1)
 
-(t8n-arrive:&quot;fade-down&quot;)[[Go back-&gt;Try to build a canoe herself.]]</tw-passagedata><tw-passagedata pid="35" name="Strip more bark off of the tree." tags="" position="125,4825" size="100,100">You stripped another yard of bark from a tree.
+(t8n-arrive:&quot;fade-down&quot;)[[Go back-&gt;Try to build a canoe herself.]]</tw-passagedata><tw-passagedata pid="32" name="Strip more bark off of the tree." tags="river" position="125,4825" size="100,100">(enchant:?passage,(bg:(hsl:210,0.8039,0.5,0.9)))You stripped another yard of bark from a tree.
 (set: $bark to it + 1)
 
 You have |bark&gt;[$bark] yards of bark.
@@ -268,7 +287,7 @@ You have completely stripped the tree. Look at it! It lost its dignity!
 (if: $bark &gt; 0)[
 [[Discard bark]]
 ]
-(t8n-arrive:&quot;fade-down&quot;)[[Go back-&gt;Try to build a canoe herself.]]</tw-passagedata><tw-passagedata pid="36" name="Strip some more bark off of the tree." tags="" position="0,4625" size="100,100">You stripped another yard of bark from a tree.
+(t8n-arrive:&quot;fade-down&quot;)[[Go back-&gt;Try to build a canoe herself.]]</tw-passagedata><tw-passagedata pid="33" name="Strip some more bark off of the tree." tags="river" position="0,4625" size="100,100">(enchant:?passage,(bg:(hsl:210,0.8039,0.5,0.9)))You stripped another yard of bark from a tree.
 (set: $bark to it + 1)
 
 You have |bark&gt;[$bark] yards of bark.
@@ -285,7 +304,7 @@ You have completely stripped the tree. Look at it! It lost its dignity!
 (if: $bark &gt; 0)[
 [[Discard bark]]
 ]
-(t8n-arrive:&quot;fade-down&quot;)[[Go back-&gt;Try to build a canoe herself.]]</tw-passagedata><tw-passagedata pid="37" name="Strip even more bark off of the tree." tags="" position="175,4650" size="100,100">You stripped another yard of bark from a tree.
+(t8n-arrive:&quot;fade-down&quot;)[[Go back-&gt;Try to build a canoe herself.]]</tw-passagedata><tw-passagedata pid="34" name="Strip even more bark off of the tree." tags="river" position="175,4650" size="100,100">(enchant:?passage,(bg:(hsl:210,0.8039,0.5,0.9)))You stripped another yard of bark from a tree.
 (set: $bark to it + 1)
 
 You have |bark&gt;[$bark] yards of bark.
@@ -302,7 +321,7 @@ You have completely stripped the tree. Look at it! It lost its dignity!
 (if: $bark &gt; 0)[
 [[Discard bark]]
 ]
-(t8n-arrive:&quot;fade-down&quot;)[[Go back-&gt;Try to build a canoe herself.]]</tw-passagedata><tw-passagedata pid="38" name="Look for more spruce roots." tags="" position="500,5000" size="100,100">You continued searching and found another spruce root!
+(t8n-arrive:&quot;fade-down&quot;)[[Go back-&gt;Try to build a canoe herself.]]</tw-passagedata><tw-passagedata pid="35" name="Look for more spruce roots." tags="river" position="500,5000" size="100,100">(enchant:?passage,(bg:(hsl:210,0.8039,0.5,0.9)))You continued searching and found another spruce root!
 (set: $root to it + 1)
 
 You have |root&gt;[$root] spruce roots.
@@ -319,7 +338,7 @@ You search every nook and cranny, but no more spruce roots seem to come up!
 (if: $root &gt; 0)[
 [[Discard root]]
 ]
-(t8n-arrive:&quot;fade-down&quot;)[[Go back-&gt;Try to build a canoe herself.]]</tw-passagedata><tw-passagedata pid="39" name="Try to find even more spruce roots." tags="" position="775,4975" size="100,100">You searched again and found one more spruce root!
+(t8n-arrive:&quot;fade-down&quot;)[[Go back-&gt;Try to build a canoe herself.]]</tw-passagedata><tw-passagedata pid="36" name="Try to find even more spruce roots." tags="river" position="775,4975" size="100,100">(enchant:?passage,(bg:(hsl:210,0.8039,0.5,0.9)))You searched again and found one more spruce root!
 (set: $root to it + 1)
 
 You have |root&gt;[$root] spruce roots.
@@ -336,7 +355,7 @@ You search every nook and cranny, but no more spruce roots seem to come up!
 (if: $root &gt; 0)[
 [[Discard root]]
 ]
-(t8n-arrive:&quot;fade-down&quot;)[[Go back-&gt;Try to build a canoe herself.]]</tw-passagedata><tw-passagedata pid="40" name="Try putting together a canoe." tags="" position="650,5125" size="100,100">(if: $bark is 6)[
+(t8n-arrive:&quot;fade-down&quot;)[[Go back-&gt;Try to build a canoe herself.]]</tw-passagedata><tw-passagedata pid="37" name="Try putting together a canoe." tags="river" position="650,5125" size="100,100">(enchant:?passage,(bg:(hsl:210,0.8039,0.5,0.9)))(if: $bark is 6)[
 &lt;!-- successful amount of bark --&gt;
 You gather your collected tree bark together. All |bark&gt;[$bark] pieces of bark.
 As you line up all of the bark for the canoe, you wonder:
@@ -365,14 +384,16 @@ Which way should the bark be oriented?
 [[“Unlike the tree, this white side stays on the inside of the canoe, the underside of the bark stays on the &#39;&#39;outside&#39;&#39;.”]] &lt;!--correct--&gt;
 ]
 (if: $bark is 0)[
-&lt;!-- Dude did you even do anything? --&gt;
+&lt;!-- Dude did you even do anything? Immediate bad ending--&gt;
 You decided that you don&#39;t actually need any bark to make a canoe. In fact, you don&#39;t actually need a canoe at all! This is all just a dream! You&#39;re going to wake up any second now...
 
-(text-style:&quot;italic&quot;,&quot;expand&quot;,&quot;rumble&quot;)[The storm rages.]
-]</tw-passagedata><tw-passagedata pid="41" name="“The white side stays on the outside of the canoe, like the tree, while the underside of the bark stays on the &#39;&#39;inside&#39;&#39;.”" tags="" position="650,5250" size="100,100"></tw-passagedata><tw-passagedata pid="42" name="“Unlike the tree, this white side stays on the inside of the canoe, the underside of the bark stays on the &#39;&#39;outside&#39;&#39;.”" tags="" position="775,5350" size="100,100">You have the bark face underside out and white side in. (if: $uhOhs is 0)[You&#39;re feeling pretty sure of yourself right now.]
-You then gather your $root spruce roots to stitch the canoe together.
+(text-style:&quot;italic&quot;,&quot;expand&quot;,&quot;rumble&quot;)[[The storm rages.]]
+]</tw-passagedata><tw-passagedata pid="38" name="“The white side stays on the outside of the canoe, like the tree, while the underside of the bark stays on the &#39;&#39;inside&#39;&#39;.”" tags="river" position="650,5250" size="100,100">(enchant:?passage,(bg:(hsl:210,0.8039,0.5,0.9)))You have the bark face white side out and underside side in.
+
+//The bark struggles to hold.//(set: $uhOhs to it + 1)
 (if: $root is 2)[
 &lt;!-- successful amount of root --&gt;
+You then gather your $root spruce roots to stitch the canoe together.
 Now then, how do you stitch the spruce root together again?
 
 [[Over-under stitch]]
@@ -380,14 +401,14 @@ Now then, how do you stitch the spruce root together again?
 [[Whip Stitch]]
 ]
 (if: $root &gt; 2)[
-After some trouble gather your spruce roots together, you wonder; how do you stitch the spruce root together again?
+After some trouble gather your $root spruce roots together, you wonder; how do you stitch the spruce root together again?(set: $uhOhs to it + 1)
 
 [[Over-under stitch]]
 [[Lazy Stitch]]
 [[Whip Stitch]]
 ]
-(if: 1 &lt;= $root &lt; 2)[
-You swiftly grab your spruce root and wonder; how do you stitch the spruce root together again?
+(if: $root &gt;= 1 and $root &lt; 2)[
+You swiftly grab your spruce root and wonder; how do you stitch the spruce root together again?(set: $uhOhs to it + 1)
 
 [[Over-under stitch]]
 [[Lazy Stitch]]
@@ -397,19 +418,47 @@ You swiftly grab your spruce root and wonder; how do you stitch the spruce root 
 Only to realize that you forgot to get any spruce roots. Surely you can just go back to get some-- //aaand// the storm flooded away all the spruce root in sight.
 That&#39;s okay, we can just hold the canoe together with sheer determination and belief!
 
-(link-reveal:(text-style:&quot;italic&quot;,&quot;expand&quot;,&quot;rumble&quot;)[The storm rages.])
+(text-style:&quot;italic&quot;,&quot;expand&quot;,&quot;rumble&quot;)[[The storm rages.]]
+]</tw-passagedata><tw-passagedata pid="39" name="“Unlike the tree, this white side stays on the inside of the canoe, the underside of the bark stays on the &#39;&#39;outside&#39;&#39;.”" tags="river" position="775,5350" size="100,100">(enchant:?passage,(bg:(hsl:210,0.8039,0.5,0.9)))You have the bark face underside out and white side in. (if: $uhOhs is 0)[You&#39;re feeling pretty sure of yourself right now.]
+(if: $root is 2)[
+&lt;!-- successful amount of root --&gt;
+You then gather your $root spruce roots to stitch the canoe together.
+Now then, how do you stitch the spruce root together again?
+
+[[Over-under stitch]]
+[[Lazy Stitch]]
+[[Whip Stitch]]
 ]
-</tw-passagedata><tw-passagedata pid="43" name="I&#39;m ready!" tags="" position="575,2575" size="100,100">&quot;First we&#39;ll need to strip bark from trees, how much spruce root will we need to sew the canoe together? Gather the spruce here.&quot;
+(if: $root &gt; 2)[
+After some trouble gather your $root spruce roots together, you wonder; how do you stitch the spruce root together again?(set: $uhOhs to it + 1)
+
+[[Over-under stitch]]
+[[Lazy Stitch]]
+[[Whip Stitch]]
+]
+(if: $root &gt;= 1 and $root &lt; 2)[
+You swiftly grab your spruce root and wonder; how do you stitch the spruce root together again?(set: $uhOhs to it + 1)
+
+[[Over-under stitch]]
+[[Lazy Stitch]]
+[[Whip Stitch]]
+]
+(if: $root is 0)[
+Only to realize that you forgot to get any spruce roots. Surely you can just go back to get some-- //aaand// the storm flooded away all the spruce root in sight.
+That&#39;s okay, we can just hold the canoe together with sheer determination and belief!
+
+(text-style:&quot;italic&quot;,&quot;expand&quot;,&quot;rumble&quot;)[[The storm rages.]]
+]</tw-passagedata><tw-passagedata pid="40" name="I&#39;m ready!" tags="village" position="575,2575" size="100,100">(enchant:?passage,(bg:(hsl:27,0.4643,0.6706,0.9)))&quot;First we&#39;ll need to strip bark from trees, how much spruce root will we need to sew the canoe together? Gather the spruce here.&quot;
 
 (set: $barkTest to 0)(set: $wrongGuesses to 0)
 
-[[Strip a yard of bark]]</tw-passagedata><tw-passagedata pid="44" name="Could you re-explain?" tags="" position="450,2425" size="100,100">&quot;Okay, I&#39;ll re-explain;
+[[Strip a yard of bark]]</tw-passagedata><tw-passagedata pid="41" name="Could you re-explain?" tags="village" position="450,2425" size="100,100">(enchant:?passage,(bg:(hsl:27,0.4643,0.6706,0.9)))&quot;Okay, I&#39;ll re-explain;
 Using a &#39;&#39;simple over-under stitch&#39;&#39; sewing method, we can sew the spruce root together. Right now we have //2 yards of bark//, so &#39;&#39;we&#39;ll need 4 more yards&#39;&#39; to make a complete canoe.
 Remember, the &#39;&#39;white side of the bark faces inward&#39;&#39; of the canoe, &#39;&#39;while the underside faces outward&#39;&#39;.&quot;
 
 &quot;Are you ready to practice now?&quot;
 
-[[I&#39;m ready!]]</tw-passagedata><tw-passagedata pid="45" name="Strip a yard of bark" tags="" position="525,2700" size="100,100">(if: $stripTest &gt; 9)[
+[[I&#39;m ready!]]</tw-passagedata><tw-passagedata pid="42" name="Strip a yard of bark" tags="village" position="525,2700" size="100,100">(enchant:?passage,(bg:(hsl:27,0.4643,0.6706,0.9)))(if: $stripTest &gt; 9)[
 Woah! That&#39;s a lot of bark! The trees look like twigs!
 (text-style:&quot;underline&quot;)[There&#39;s no more bark to strip!]
 
@@ -439,7 +488,7 @@ You have $barkTest yards of bark.
 (if: $stripTest &gt; 0)[
 [[This is enough bark!]]
 ]
-]</tw-passagedata><tw-passagedata pid="46" name="This is enough bark!" tags="" position="625,2825" size="100,100">(if: $barkTest is 6)[
+]</tw-passagedata><tw-passagedata pid="43" name="This is enough bark!" tags="village" position="625,2825" size="100,100">(enchant:?passage,(bg:(hsl:27,0.4643,0.6706,0.9)))(if: $barkTest is 6)[
 &quot;Yes! That&#39;s enough bark to make a canoe!&quot;
 
 &quot;To stitch together the bark, we&#39;ll need spruce root. How many yards of spruce root will we need?&quot;
@@ -457,19 +506,19 @@ The girl puts together 6 yards of bark.
 [[2 yards!]]
 [[4 yards!]]
 [[6 yards]]
-]</tw-passagedata><tw-passagedata pid="47" name="Perform lazy stitch style" tags="" position="850,3175" size="100,100">&quot;Not quite. We actually need to use the &#39;&#39;over-under stitch&#39;&#39; style.&quot;
+]</tw-passagedata><tw-passagedata pid="44" name="Perform lazy stitch style" tags="village" position="850,3175" size="100,100">(enchant:?passage,(bg:(hsl:27,0.4643,0.6706,0.9)))&quot;Not quite. We actually need to use the &#39;&#39;over-under stitch&#39;&#39; style.&quot;
 &quot;When using the over-under stitch, which way should the bark face?&quot;
 (set: $wrongGuesses to it + 1)
 [[“The white side stays on the outside of the canoe, like the tree, while the underside of the bark stays on the inside.”]]
-[[“Unlike the tree, this white side stays on the inside of the canoe, the underside of the bark stays on the outside.”]]</tw-passagedata><tw-passagedata pid="48" name="Perform over-under stitch style" tags="" position="600,3325" size="100,100">&quot;That&#39;s right!&quot;
+[[“Unlike the tree, this white side stays on the inside of the canoe, the underside of the bark stays on the outside.”]]</tw-passagedata><tw-passagedata pid="45" name="Perform over-under stitch style" tags="village" position="600,3325" size="100,100">(enchant:?passage,(bg:(hsl:27,0.4643,0.6706,0.9)))&quot;That&#39;s right!&quot;
 &quot;Now, to use the over-under stitch, which way should the bark face?&quot;
 
 [[“The white side stays on the outside of the canoe, like the tree, while the underside of the bark stays on the inside.”]]
-[[“Unlike the tree, this white side stays on the inside of the canoe, the underside of the bark stays on the outside.”]]</tw-passagedata><tw-passagedata pid="49" name="Perform whip stitch style" tags="" position="725,3200" size="100,100">&quot;Not quite. We actually need to use the &#39;&#39;over-under stitch&#39;&#39; style.&quot;
+[[“Unlike the tree, this white side stays on the inside of the canoe, the underside of the bark stays on the outside.”]]</tw-passagedata><tw-passagedata pid="46" name="Perform whip stitch style" tags="village" position="725,3200" size="100,100">(enchant:?passage,(bg:(hsl:27,0.4643,0.6706,0.9)))&quot;Not quite. We actually need to use the &#39;&#39;over-under stitch&#39;&#39; style.&quot;
 &quot;When using the over-under stitch, which way should the bark face?&quot;
 (set: $wrongGuesses to it + 1)
 [[“The white side stays on the outside of the canoe, like the tree, while the underside of the bark stays on the inside.”]]
-[[“Unlike the tree, this white side stays on the inside of the canoe, the underside of the bark stays on the outside.”]]</tw-passagedata><tw-passagedata pid="50" name="Discard a yard of bark" tags="" position="700,2675" size="100,100">You discarded a yard of bark.
+[[“Unlike the tree, this white side stays on the inside of the canoe, the underside of the bark stays on the outside.”]]</tw-passagedata><tw-passagedata pid="47" name="Discard a yard of bark" tags="village" position="700,2675" size="100,100">(enchant:?passage,(bg:(hsl:27,0.4643,0.6706,0.9)))You discarded a yard of bark.
 (set: $barkTest to it - 1)
 You have $barkTest yards of bark.
 
@@ -481,7 +530,7 @@ You have $barkTest yards of bark.
 ]
 (if: $stripTest &gt; 0)[
 [[This is enough bark!]]
-]</tw-passagedata><tw-passagedata pid="51" name="“The white side stays on the outside of the canoe, like the tree, while the underside of the bark stays on the inside.”" tags="" position="725,3450" size="100,100">&quot;No, the white side should actually stay// on the inside//, unlike on the tree, with the underside //facing the outside//.&quot;
+]</tw-passagedata><tw-passagedata pid="48" name="“The white side stays on the outside of the canoe, like the tree, while the underside of the bark stays on the inside.”" tags="village" position="725,3450" size="100,100">(enchant:?passage,(bg:(hsl:27,0.4643,0.6706,0.9)))&quot;No, the white side should actually stay// on the inside//, unlike on the tree, with the underside //facing the outside//.&quot;
 (set: $wrongGuesses to it + 1)
 (if: $wrongGuesses &gt; 1)[
 &quot;You should probably keep note of this, if you&#39;re having trouble keeping track&quot;
@@ -489,14 +538,14 @@ You have $barkTest yards of bark.
 Before the girl can explain anything further, she looks up, concerned.
 “I have to go! Please keep these safe, you&#39;ll need these for later.”
 
-[[Take the bowl.]]</tw-passagedata><tw-passagedata pid="52" name="“Unlike the tree, this white side stays on the inside of the canoe, the underside of the bark stays on the outside.”" tags="" position="600,3550" size="100,100">“Great, seems like you get it!”
+[[Take the bowl.]]</tw-passagedata><tw-passagedata pid="49" name="“Unlike the tree, this white side stays on the inside of the canoe, the underside of the bark stays on the outside.”" tags="village" position="600,3550" size="100,100">(enchant:?passage,(bg:(hsl:27,0.4643,0.6706,0.9)))“Great, seems like you get it!”
 (if: $wrongGuesses &gt; 1)[
 &quot;You should probably keep note of this, if you&#39;re having trouble keeping track&quot;
 ]
 Before the girl can explain anything further, she looks up, concerned.
 “I have to go! Please keep these safe, you&#39;ll need these for later.”
 
-[[Take the bowl.]]</tw-passagedata><tw-passagedata pid="53" name="Discard bark" tags="" position="400,4850" size="100,100">You discarded a yard of bark.
+[[Take the bowl.]]</tw-passagedata><tw-passagedata pid="50" name="Discard bark" tags="river" position="400,4850" size="100,100">(enchant:?passage,(bg:(hsl:210,0.8039,0.5,0.9)))You discarded a yard of bark.
 (set: $bark to it - 1)
 You have $bark yards of bark.
 
@@ -506,7 +555,7 @@ You have $bark yards of bark.
 (if: $bark &gt; 0)[
 [[Discard bark]]
 ]
-(t8n-arrive:&quot;fade-down&quot;)[[Go back-&gt;Try to build a canoe herself.]]</tw-passagedata><tw-passagedata pid="54" name="Discard root" tags="" position="650,4975" size="100,100">You discarded a spruce root.
+(t8n-arrive:&quot;fade-down&quot;)[[Go back-&gt;Try to build a canoe herself.]]</tw-passagedata><tw-passagedata pid="51" name="Discard root" tags="river" position="650,4975" size="100,100">(enchant:?passage,(bg:(hsl:210,0.8039,0.5,0.9)))You discarded a spruce root.
 (set: $root to it - 1)
 You have $root spruce roots.
 
@@ -516,23 +565,165 @@ You have $root spruce roots.
 (if: $root &gt; 0)[
 [[Discard root]]
 ]
-(t8n-arrive:&quot;fade-down&quot;)[[Go back-&gt;Try to build a canoe herself.]]</tw-passagedata><tw-passagedata pid="55" name="2 yards!" tags="" position="575,3075" size="100,100">&quot;Yup!&quot; And to put the spruce together, how should we stitch it?&quot;
+(t8n-arrive:&quot;fade-down&quot;)[[Go back-&gt;Try to build a canoe herself.]]</tw-passagedata><tw-passagedata pid="52" name="2 yards!" tags="village" position="575,3075" size="100,100">(enchant:?passage,(bg:(hsl:27,0.4643,0.6706,0.9)))&quot;Yup!&quot; And to put the spruce together, how should we stitch it?&quot;
 
 [[Perform over-under stitch style]]
 [[Perform lazy stitch style]]
-[[Perform whip stitch style]]</tw-passagedata><tw-passagedata pid="56" name="4 yards!" tags="" position="725,2975" size="100,100">&quot;No, we only need 2 yards of spruce root.&quot;
+[[Perform whip stitch style]]</tw-passagedata><tw-passagedata pid="53" name="4 yards!" tags="village" position="725,2975" size="100,100">(enchant:?passage,(bg:(hsl:27,0.4643,0.6706,0.9)))&quot;No, we only need 2 yards of spruce root.&quot;
 (set: $wrongGuesses to it + 1)
 &quot;To stitch the bark together, we&#39;ll need to...&quot;
 
 [[Perform over-under stitch style]]
 [[Perform lazy stitch style]]
-[[Perform whip stitch style]]</tw-passagedata><tw-passagedata pid="57" name="6 yards" tags="" position="875,2925" size="100,100">&quot;No, we only need 2 yards of spruce root.&quot;
+[[Perform whip stitch style]]</tw-passagedata><tw-passagedata pid="54" name="6 yards" tags="village" position="875,2925" size="100,100">(enchant:?passage,(bg:(hsl:27,0.4643,0.6706,0.9)))&quot;No, we only need 2 yards of spruce root.&quot;
 (set: $wrongGuesses to it + 1)
 &quot;To stitch the bark together, we&#39;ll need to...&quot;
 
 [[Perform over-under stitch style]]
 [[Perform lazy stitch style]]
-[[Perform whip stitch style]]</tw-passagedata><tw-passagedata pid="58" name="Over-under stitch" tags="" position="775,5475" size="100,100"></tw-passagedata><tw-passagedata pid="59" name="Lazy Stitch" tags="" position="712.5,5600" size="100,100"></tw-passagedata><tw-passagedata pid="60" name="Whip Stitch" tags="" position="837.5,5600" size="100,100"></tw-passagedata></tw-storydata>
+[[Perform whip stitch style]]</tw-passagedata><tw-passagedata pid="55" name="Over-under stitch" tags="riverSuccess" position="775,5600" size="100,100">(enchant:?passage,(bg:(hsl:210,0.8039,0.5,0.9)))You stitch the spruce root together successfully.
+(if: $collected is 1)[
+You then apply the resin along the stitches of the canoe to keep water from getting in.
+
+[[Get in the canoe]]
+]
+(if: $collected is not 1)[
+-THE RESIN!
+It seems that in your haste, you forgot to get the resin!
+You try applying some mud along the canoe instead. //Phew!// That was a danger avoided, right?
+
+(text-style:&quot;italic&quot;,&quot;expand&quot;,&quot;buoy&quot;)[The storm rages.](set: $uhOhs to it + 1)
+
+[[Get in the canoe.]]
+]
+</tw-passagedata><tw-passagedata pid="56" name="Lazy Stitch" tags="riverSuccess" position="650,5475" size="100,100">(enchant:?passage,(bg:(hsl:210,0.8039,0.5,0.9)))You stitch with the ever iconic //whip stitch// method! For some reason it&#39;s not ringing any bells... Why&#39;s that?(set: $uhOhs to it + 1)
+(if: $collected is 1)[
+Anyways, you then apply the resin along the stitches of the canoe to keep water from getting in.
+
+[[Get in the canoe]]
+]
+(if: $collected is not 1)[
+Okay, now you just need to apply- //THE RESIN!//
+It seems that in your haste, you forgot to get the resin!
+You try applying some mud along the canoe instead. //Phew!// That was a danger avoided, right?
+
+(text-style:&quot;italic&quot;,&quot;expand&quot;,&quot;buoy&quot;)[The storm rages.](set: $uhOhs to it + 1)
+
+[[Get in the canoe.]]
+]
+</tw-passagedata><tw-passagedata pid="57" name="Whip Stitch" tags="riverSuccess" position="900,5475" size="100,100">(enchant:?passage,(bg:(hsl:210,0.8039,0.5,0.9)))You stitch with the good-old fashioned //whip stitch// method! For some reason you struggle to remember how to do it properly... Why&#39;s that?(set: $uhOhs to it + 1)
+(if: $collected is 1)[
+Anyways, you then apply the resin along the stitches of the canoe to keep water from getting in.
+
+[[Get in the canoe]]
+]
+(if: $collected is not 1)[
+Okay, now you just need to apply- //THE RESIN!//
+It seems that in your haste, you forgot to get the resin!
+You try applying some mud along the canoe instead. //Phew!// That was a danger avoided, right?
+
+(text-style:&quot;italic&quot;,&quot;expand&quot;,&quot;buoy&quot;)[The storm rages.](set: $uhOhs to it + 1)
+
+[[Get in the canoe.]]
+]
+</tw-passagedata><tw-passagedata pid="58" name="Wake Up." tags="village" position="550,975" size="100,100">(enchant:?passage,(bg:(hsl:27,0.4643,0.6706,0.9)))A breeze blows over Emma as she lays in the canoe, an empty dark sky passing above her.
+
+She sat up quickly, the canoe shifting slightly as her weight presses it into the riverbank mud.
+Confused, she steps out of the canoe.
+[[Look Left]]
+[[Look Right]]</tw-passagedata><tw-passagedata pid="59" name="Search for Your Canoe" tags="river" position="525,3975" size="100,100">(enchant:?passage,(bg:(hsl:210,0.8039,0.5,0.9)))Emma walks along the river, trying to find if the canoe was still around. Finding shards of bark, she finds that the canoe she arrived in had broken down and flowed down the river in pieces due to its age.
+
+(set: $seenCanoeDMG to &quot;true&quot;)
+[[Travel back to the village]]</tw-passagedata><tw-passagedata pid="60" name="Credits" tags="menu" position="800,475" size="100,100">&#39;&#39;Waterworks:&#39;&#39;
+
+Programmer - Leonardo Montoya
+Artist - De&#39;Anquan Brown
+Writer - Luke Almagro
+
+(t8n-arrive:&quot;fade-down&quot;)[[Go back-&gt;Start]]</tw-passagedata><tw-passagedata pid="61" name="Get in the canoe" tags="museum" position="800,5975" size="100,100">(enchant:?passage,(bg:(hsl:270,0.2025,0.6902,0.9)))(if: $uhOhs is 0)[You get in the canoe. It feels sturdy and no issues arise.
+
+	Emma gets into her canoe and rides her way down the river. With only the current to carry her she lays down, travelling through the storm. 
+    The sound of the storm passes, with Emma waking up to the sound of footsteps. //Though//, they don’t sound like the same thumps of walking on dirt or squelches of walking in mud. //Rather//, they sounded like boots against a hard floor.
+    
+	She gets up out of her canoe and finds herself back in the present.
+    
+    [[With many things on her mind she rushes to reach an exit and head home.]]
+
+]
+(if: $uhOhs &gt;= 1 and $uhOhs &lt; 4)[You get in the canoe. It feels pretty shaky.
+
+	The storms rages louder than ever. Emma tries to get in the canoe, but she just can bring herself to do it. Maybe it&#39;s her instincts telling her not to, but either way the canoe isn&#39;t doing it.
+
+The storm rages more and more. You take shelter under some bushes and trees. As the waters rush towards you, you shut your eyes.
+
+(text-style:&quot;rumble&quot;)[*Crash*]
+
+You open your eyes to see that you&#39;re back in the museum. You have some scratches on you and the canoe you were laying in is as well.
+
+A security guard walks by and asks what you doing in there and up so late.
+
+Emma tries to explain but she can&#39;t get the right words out. It was all almost like a blur to her.
+
+[[With many things on her mind she rushes to reach an exit and head home.]]
+]
+(if: $uhOhs &gt;= 4)[You get in the canoe...
+It falls apart before your feet.
+
+The storm rages more and more. You take shelter under some bushes and trees. As the waters rush towards you, you shut your eyes.
+
+(text-style:&quot;rumble&quot;)[*Crash*]
+
+You open your eyes only to see that you&#39;re back in the museum. The canoe you were sitting in is destroyed.
+
+The security guard says you&#39;ve been asleep on that broken canoe for hours. Because the staff think you were the culprit, they have you clean up the mess and charge a fine to your family.
+
+If only Emma was more attentive... Oh well.
+
+&#39;&#39;The End&#39;&#39;
+]</tw-passagedata><tw-passagedata pid="62" name="Get in the canoe." tags="museum" position="825,5775" size="100,100">(enchant:?passage,(bg:(hsl:270,0.2025,0.6902,0.9)))The storm rages more and more. You take shelter under some bushes and trees. As the waters rush towards you, you shut your eyes.
+
+(text-style:&quot;rumble&quot;)[*Crash*]
+
+You open your eyes only to see that you&#39;re back in the museum. The canoe you were sitting in is destroyed.
+
+The security guard says you&#39;ve been asleep on that broken canoe for hours. Because the staff think you were the culprit, they have you clean up the mess and charge a fine to your family.
+
+If only Emma was more attentive... Oh well.
+
+&#39;&#39;The End&#39;&#39;</tw-passagedata><tw-passagedata pid="63" name="With many things on her mind she rushes to reach an exit and head home." tags="museum" position="800,6100" size="100,100">(enchant:?passage,(bg:(hsl:270,0.2025,0.6902,0.9)))(if: $uhOhs is 0)[
+The next week, Emma presents to her class. It&#39;s about the history of American waterways and travel in Chicago.
+
+The entire class is surprised by Emma&#39;s illustrative words and specifcs of details.
+
+&quot;It&#39;s almost like you were there!&quot;, said the teacher.
+
+&quot;Yeah, it&#39;s almost like I was...&quot; Emma clenches onto a piece of the canoe she had made in back in the past.
+
+&#39;&#39;The End&#39;&#39;
+]
+(if: $uhOhs &gt;= 1)[
+The next week, Emma presents to her class. It&#39;s about the history of American waterways and travel in Chicago.
+
+Surely this is a shoe-in for Emma to get a good grade. She could just describe what happened to her!
+
+Unfortunately the class is confused from what seems to be a fairly fantastical tale. The teacher, on the hand, questions why Emma made certain decisions or if what the people said was really accurate.
+
+Emma got a B.
+
+&quot;Nice work kiddo, but maybe let&#39;s keep the storytelling to teacher. Just pay more attention from now on!&quot;
+
+&#39;&#39;The End&#39;&#39;
+]</tw-passagedata><tw-passagedata pid="64" name="The storm rages." tags="museum" position="525,5800" size="100,100">(enchant:?passage,(bg:(hsl:270,0.2025,0.6902,0.9)))The storm rages more and more. You take shelter under some bushes and trees. As the waters rush towards you, you shut your eyes.
+
+(text-style:&quot;rumble&quot;)[*Crash*]
+
+You open your eyes only to see that you&#39;re back in the museum. The canoe you were sitting in is destroyed.
+
+The security guard says you&#39;ve been asleep on that broken canoe for hours. Because the staff think you were the culprit, they have you clean up the mess and charge a fine to your family.
+
+If only Emma was more attentive... Oh well.
+
+&#39;&#39;The End&#39;&#39;</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
